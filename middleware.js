@@ -13,10 +13,10 @@ export async function middleware(request) {
   if (request.nextUrl.pathname.startsWith('/write')) {
     const session = await getToken({ req : request })
     if (session == null) {
-      return NextResponse.redirect(new URL('http://localhost:3000/api/auth/signin', request.url));
+      return NextResponse.redirect(new URL('https://portfolio-five-khaki-81.vercel.app/api/auth/signin', request.url));
     } else {
       if(session.email != 'dufqnfsk22@gmail.com'){
-        return NextResponse.redirect(new URL('http://localhost:3000/api/auth/signin', request.url));
+        return NextResponse.redirect(new URL('https://portfolio-five-khaki-81.vercel.app/api/auth/signin', request.url));
       }
     }
   } 
