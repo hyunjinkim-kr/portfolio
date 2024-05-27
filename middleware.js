@@ -14,10 +14,6 @@ export async function middleware(request) {
     const session = await getToken({ req : request })
     if (session == null) {
       return NextResponse.redirect(new URL('https://portfolio-five-khaki-81.vercel.app/api/auth/signin', request.url));
-    } else {
-      if(session.email != 'dufqnfsk22@gmail.com'){
-        return NextResponse.redirect(new URL('https://portfolio-five-khaki-81.vercel.app/api/auth/signin', request.url));
-      }
-    }
+    } 
   } 
 } 
