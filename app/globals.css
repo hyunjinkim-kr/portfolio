@@ -2,32 +2,101 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+
+body{
+  margin: 0;
+  background: rgb(249, 250, 255);
+  /* background-color: mintcream; */
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.navbar {
+  background: white;
+  padding: 20px;
+  color: black;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.navbar a {
+  margin-right: 30px;
+  text-decoration: none;
+  color: black;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.logo {
+  font-weight: bold;
+} 
+
+
+
+.list-bg {
+  /* background: rgb(249, 250, 255); */
+  padding: 10px;
 }
+.list-item {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 5px;
+  box-shadow: rgb(224, 224, 224) 0px 2px 4px 0px;
+}
+.list-item h4 {
+  font-size: 20px;
+  font-weight: 800;
+  margin: 0;
+}
+.list-item p {
+  color: grey;
+  margin : 5px 0px;
+} 
+
+.detail-item {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  padding: 30px;
+  margin-bottom: 30px;
+}
+
+.detail-item h4 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.detail-item p {
+  font-size: 1.2rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+
+
+.p-20 {
+  padding: 20px;
+}
+input {
+  box-sizing: border-box;
+  padding: 10px;
+  display: block;
+  margin-bottom: 10px;
+}
+button {
+  padding: 10px 15px;
+  background: lightgray;
+  color:black;
+  border: none;
+  border-radius: 5px;
+} 
+
+/* 링크 밑줄 없애기 */
+a{
+  text-decoration: none;
+  color: #000;
+}
+
+.list-item{
+  opacity: 1;
+  transition: all 1s;
+}
+
+
+
