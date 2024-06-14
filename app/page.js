@@ -14,10 +14,10 @@ export default async function Home() {
       <div className="flex flex-col items-center">
         <div className="mb-8 mt-12"> {/* 이미지 더 아래로 이동 */}
           <img 
-            src="/hyunjin.jpg" 
+            src="/hyunjin_profile.jpg" 
             alt="프로필 사진" 
             className="rounded-full object-cover"
-            style={{ width: '320px', height: '320px', objectFit: 'cover' }} // objectFit 설정 cover  contain
+            style={{ width: '320px', height: 'auto', objectFit: 'cover' }} // objectFit 설정 cover  contain
           />
         </div>
         <div className="text-center"> {/* 텍스트를 가운데 정렬하기 위해 추가 */}
